@@ -4,7 +4,13 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      "opensans": ['Open Sans', "sans-serif"],
+      "sans": ['Open Sans', "sans-serif"],
+    },
+    extend: {
+      
+    },
   },
   plugins: [],
 }
