@@ -547,6 +547,11 @@ video {
   gap: 0.75rem;
 }
 
+.bg-gray-1{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 38 40 / var(--tw-bg-opacity));
+}
+
 .font-opensans{
   font-family: Open Sans, sans-serif;
 }

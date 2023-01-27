@@ -4,10 +4,12 @@ import About from "~/Components/About";
 
 export default function Index() {
   return (
-     <div>
+    <body>
+     <div className="bg-gray-1">
       <Navbar/>
       <Intro/>
       <About/>
      </div>
+    </body> 
   );
 }

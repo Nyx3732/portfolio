@@ -9,19 +9,20 @@ module.exports = {
       "sans": ['Open Sans', "sans-serif"],
     },
     extend: {
+      colors: {
+        green:{
+          1:"#75FCDD",
+          2:"#265448"
+        },
+        gray:{
+          1:"#252628"
+        }
+      },
       
     },
   },
 
-colors: {
-  green:{
-    1:"#75FCDD",
-    2:"#265448"
-  },
-  gray:{
-    1:"#252628"
-  }
-},
+
 
   plugins: [],
 }
