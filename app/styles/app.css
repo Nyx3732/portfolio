@@ -519,12 +519,16 @@ video {
   margin: 0px;
 }
 
-.m-3{
-  margin: 0.75rem;
+.m-0{
+  margin: 0px;
 }
 
 .flex{
   display: flex;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .h-96{
