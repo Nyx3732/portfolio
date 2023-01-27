@@ -4,6 +4,8 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    
+    
     fontFamily: {
       "opensans": ['Open Sans', "sans-serif"],
       "sans": ['Open Sans', "sans-serif"],
@@ -17,8 +19,7 @@ module.exports = {
         gray:{
           1:"#252628"
         }
-      },
-      
+      }
     },
   },
 
