@@ -4,7 +4,7 @@ import About from "~/Components/About";
 
 export default function Index() {
   return (
-     <div className="bg-gradient-to-b from-green-1 to-gray-1 min-h-screen p-0 m-0">
+     <div className="bg-gradient-to-b from-green-2 to-gray-1 min-h-screen p-0 m-0 text-white">
       <Navbar/>
       <Intro/>
       <About/>

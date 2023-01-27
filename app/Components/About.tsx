@@ -2,7 +2,7 @@ import photo from "img/photo.png"
 
 export default function About() {
     return(
-        <div className="flex flex-row bg">
+        <div className="flex flex-row justify-evenly items-center">
         <img src={photo} className="h-96"></img>
         <div> 
             <div>
