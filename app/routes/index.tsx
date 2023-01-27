@@ -9,6 +9,6 @@ export default function Index() {
       <Intro/>
       <About/>
      </div>
-    </body> 
+    
   );
 }
