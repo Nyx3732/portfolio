@@ -5,12 +5,12 @@ export default function About() {
         <div className="flex flex-row justify-evenly items-center m-20">
         <img src={photo} className="h-96"></img>
         <div> 
-            <div>
-                <p className="text-3xl text-green-1 border-b-4">About me</p>
-                <p className="text-2xl"> text text text text text text text text text</p>
+            <div className="m-10">
+                <p className="text-4xl text-green-1 font-bold m-5">About me</p>
+                <p className="text-xl"> text text text text text text text text text</p>
             </div>
-            <div className="flex flex-row gap-6 text-xl">
-                
+            <div className="m-10">
+            <p className="text-2xl font-bold">Skills</p>    
             </div>
         </div>
         </div>
