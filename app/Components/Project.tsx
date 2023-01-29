@@ -7,6 +7,7 @@ export default function(props:any){
     return(
         <div>
             {toolArray}
+            <img src={props.image} alt="" />
         </div>
     );
 }

@@ -5,6 +5,7 @@ import Skill from "~/Components/Skill";
 import Project from "~/Components/Project";
 
 
+
 const skillsArray = [
   <Skill SkillName="Javascript" key="1"/>,
   <Skill SkillName="Javascript" key="2"/>,
@@ -13,6 +14,10 @@ const skillsArray = [
 ]
 
 const toolsArray = ["Tool1", "Tool2"];
+
+const projectArray = [
+  <Project tools={toolsArray} image="image"/>
+]
 export default function Index() {
   return (
     <body className="bg-gray-1">
