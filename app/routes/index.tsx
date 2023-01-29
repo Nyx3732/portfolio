@@ -3,6 +3,7 @@ import Intro from "~/Components/Intro";
 import About from "~/Components/About";
 import Skill from "~/Components/Skill";
 import Project from "~/Components/Project";
+import Contact from "~/Components/Contact";
 
 
 
@@ -27,6 +28,7 @@ export default function Index() {
       <About/>
       {skillsArray}
       <Project tools={toolsArray}/>
+      <Contact/>
     </div>
     </body>
   
