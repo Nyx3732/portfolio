@@ -14,9 +14,11 @@ const skillsArray = [
 ]
 
 const toolsArray = ["Tool1", "Tool2"];
+const toolsArray2 = ["rzecz","rzecz"];
 
 const projectArray = [
-  <Project tools={toolsArray} image="image"/>
+  <Project tools={toolsArray} image="image" projectName="Name" key="1"/>,
+  <Project tools={toolsArray2} image="image" projectName="Name2" key="2"/>
 ]
 export default function Index() {
   return (
