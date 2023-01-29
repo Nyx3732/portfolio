@@ -10,30 +10,7 @@ export default function About() {
                 <p className="text-2xl"> text text text text text text text text text</p>
             </div>
             <div className="flex flex-row gap-6 text-xl">
-                <div>
-                    <p>skills</p>
-                    <ul>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>skills</p>
-                    <ul>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>skills</p>
-                    <ul>
-                        <li>text</li>
-                        <li>text</li>
-                        <li>text</li>
-                    </ul>
-                </div>
+                
             </div>
         </div>
         </div>

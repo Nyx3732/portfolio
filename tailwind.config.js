@@ -7,8 +7,12 @@ module.exports = {
     
     
     fontFamily: {
+      "oswald": ['Oswald', "sans-serif"],
+      "mavenpro": ['Maven Pro',"sans-serif"],
       "opensans": ['Open Sans', "sans-serif"],
+      "archivo": ['Archivo', "sans-serif"],
       "sans": ['Open Sans', "sans-serif"],
+
     },
     extend: {
       colors: {
