@@ -7,14 +7,14 @@ export default function Intro() {
         <div className="flex flex-row justify-evenly items-center m-20">
         <div className="">
         <div>
-          <p className="text-5xl font-archivo">Hi,</p>
-          <p className="text-5xl text-green-1 border-b-4 font-archivo">I'm Sebastian Glados</p>
-          <p className="text-3xl opacity-70">Software and website developer</p>
+          <p className="text-6xl font-bold m-5">Hi, I'm</p>
+          <p className="text-6xl font-bold m-5">Sebastian Glados</p>
+          <p className="text-3xl text-green-1 m-5">Software and website developer</p>
         </div>
-        <div className="flex flex-row gap-3 items-center">
+        <div className="flex flex-row gap-3 items-center m-5">
             <a href=""><img src={icon2} className="h-10"></img></a>
             <a href=""><img src={icon3} className="h-10"></img></a>
-            <p className="text-xl">more about me</p>
+            <p className="text-2xl">PROJECTS</p>
         </div>
         </div>
         <div>

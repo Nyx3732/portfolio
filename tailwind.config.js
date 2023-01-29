@@ -11,7 +11,8 @@ module.exports = {
       "mavenpro": ['Maven Pro',"sans-serif"],
       "opensans": ['Open Sans', "sans-serif"],
       "archivo": ['Archivo', "sans-serif"],
-      "sans": ['Open Sans', "sans-serif"],
+      "inter": ['Inter', "sans-serif"],
+      "sans": ['Inter', "sans-serif"],
 
     },
     extend: {
