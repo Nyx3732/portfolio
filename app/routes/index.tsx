@@ -1,7 +1,18 @@
 import Navbar from "~/Components/Navbar";
 import Intro from "~/Components/Intro";
 import About from "~/Components/About";
+import Skill from "~/Components/Skill";
+import Project from "~/Components/Project";
 
+
+const skillsArray = [
+  <Skill SkillName="Javascript" key="1"/>,
+  <Skill SkillName="Javascript" key="2"/>,
+  <Skill SkillName="Javascript" key="3"/>,
+  <Skill SkillName="Javascript" key="4"/>
+]
+
+const toolsArray = ["Tool1", "Tool2"];
 export default function Index() {
   return (
     <body className="bg-gray-1">
@@ -9,6 +20,8 @@ export default function Index() {
       <Navbar/>
       <Intro/>
       <About/>
+      {skillsArray}
+      <Project tools={toolsArray}/>
     </div>
     </body>
   
