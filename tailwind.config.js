@@ -4,8 +4,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    
-    
     fontFamily: {
       "oswald": ['Oswald', "sans-serif"],
       "mavenpro": ['Maven Pro',"sans-serif"],
@@ -13,9 +11,11 @@ module.exports = {
       "archivo": ['Archivo', "sans-serif"],
       "inter": ['Inter', "sans-serif"],
       "sans": ['Inter', "sans-serif"],
-
     },
     extend: {
+      height: {
+        'custom' : '38rem',
+      },
       colors: {
         green:{
           1:"#75FCDD",
@@ -27,10 +27,5 @@ module.exports = {
       }
     },
   },
-
-
-
   plugins: [],
 }
-
-

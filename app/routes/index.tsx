@@ -4,15 +4,9 @@ import About from "~/Components/About";
 import Skill from "~/Components/Skill";
 import Project from "~/Components/Project";
 import Contact from "~/Components/Contact";
+import Show from "~/Components/Show";
 
 
-
-const skillsArray = [
-  <Skill SkillName="Javascript" key="1"/>,
-  <Skill SkillName="Javascript" key="2"/>,
-  <Skill SkillName="Javascript" key="3"/>,
-  <Skill SkillName="Javascript" key="4"/>
-]
 
 const toolsArray = ["Tool1", "Tool2"];
 const toolsArray2 = ["rzecz","rzecz"];
@@ -21,6 +15,8 @@ const projectArray = [
   <Project tools={toolsArray} image="image" projectName="Name" key="1"/>,
   <Project tools={toolsArray2} image="image" projectName="Name2" key="2"/>
 ]
+
+const description1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
 export default function Index() {
   return (
     <body className="bg-gray-1">
@@ -28,8 +24,11 @@ export default function Index() {
       <Navbar/>
       <Intro/>
       <About/>
-      {skillsArray}
-      <Project tools={toolsArray}/>
+      <div onClick={Show}>
+        show
+      </div>
+      <Project id="myDIV" tools={toolsArray} image="img/icon2.png" projectName="cos" 
+      description={description1} role="role"/>
       <Contact/>
     </div>
     </body>
