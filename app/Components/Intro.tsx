@@ -14,7 +14,11 @@ export default function Intro() {
         <div className="flex flex-row gap-3 items-center my-5">
             <a href=""><img src={icon2} className="h-10"></img></a>
             <a href=""><img src={icon3} className="h-10"></img></a>
-            <p className="text-xl">My projects →</p>
+            <div className="bg-gradient-to-bl from-green-2 to-green-1 w-max rounded-full p-1">
+            <div className="flex flex-col justify-between h-full bg-gray-1 text-white rounded-full py-1 px-5 hover:bg-transparent">
+            <p className="text-xl">My projects ↓</p>
+            </div>
+        </div>
         </div>
         </div>
         <div>

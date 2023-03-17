@@ -1,4 +1,5 @@
 import photo from "img/photo.png"
+import React from "react";
 import Skill from "~/Components/Skill";
 
 const skillsArray = [
@@ -7,7 +8,9 @@ const skillsArray = [
     <Skill SkillName="JavaScript" key="3"/>,
     <Skill SkillName="Java" key="4"/>,
     <Skill SkillName="Python" key="5"/>,
-    <Skill SkillName="SQL" key="6"/>
+    <Skill SkillName="SQL" key="6"/>,
+    <Skill SkillName="React" key="7"/>,
+
   ]
 
 export default function About() {
