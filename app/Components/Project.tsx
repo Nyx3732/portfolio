@@ -1,4 +1,6 @@
 import Tool from "~/Components/Tool";
+import { myFunction, hideMyDiv } from "~/Components/Show";
+
 export default function(props:any){
     const toolArray = [];
     for(let i = 0; i<props.tools.length; i++){
@@ -21,6 +23,7 @@ export default function(props:any){
                 <div className="flex flex-row gap-2">
                     <div className="bg-gradient-to-bl from-green-2 to-green-1 w-max rounded-full p-1">{props.website}</div>
                     <div className="bg-gradient-to-bl from-green-2 to-green-1 w-max rounded-full p-1">{props.git}</div>
+                    <button onClick={hideMyDiv}>Hide DIV</button>
                 </div>
               </div>
           </div>

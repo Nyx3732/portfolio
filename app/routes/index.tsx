@@ -25,15 +25,7 @@ export default function Index() {
       <Navbar/>
       <Intro/>
       <About/>
-      <div onClick={myFunction}>Toggle DIV</div>
-
-<div  className="display: block;">
-<Project  tools={toolsArray} image="img/icon2.png" projectName="cos" 
-      description={description1} role="role"/>
-</div>
-<Projects/>
-      <Project  tools={toolsArray} image="img/icon2.png" projectName="cos" 
-      description={description1} role="role"/>
+      <Projects/>
       <Contact/>
     </div>
     </body>

@@ -9,3 +9,11 @@ export function myFunction(): void {
           }
         }
       }
+
+      export function hideMyDiv(): void {
+        const x = document.getElementById("myDIV");
+        if (x) {
+          x.style.display = "none";
+        }
+      }
+      
