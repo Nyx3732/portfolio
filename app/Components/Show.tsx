@@ -1,5 +1,4 @@
-export default function Show(){
-    function myFunction(): void {
+export function myFunction(): void {
         const x: HTMLElement | null = document.getElementById("myDIV");
       
         if (x) {
@@ -10,4 +9,3 @@ export default function Show(){
           }
         }
       }
-}
