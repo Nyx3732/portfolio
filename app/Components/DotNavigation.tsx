@@ -29,13 +29,13 @@ const DotNavigation: React.FC<DotNavigationProps> = ({ sectionRefs }) => {
   }, []);
 
   return (
-    <div className="fixed right-0 top-1/2 z-50">
-      <ul className="flex flex-col">
+    <div className="fixed right-4 top-1/2 z-50 transform -translate-y-1/2">
+    <ul className="flex flex-col">
         {sectionRefs.map((_, index) => (
           <li key={index}>
             <button
               onClick={() => sectionRefs[index].current?.scrollIntoView({ behavior: "smooth" })}
-              className={`w-5 h-5 rounded-full border border-white mb-2 focus:outline-none ${
+              className={`w-5 h-5 rounded-full border border-white mb-5 focus:outline-none ${
                 activeSection === index ? "bg-white" : "bg-transparent"
               }`}
             ></button>
