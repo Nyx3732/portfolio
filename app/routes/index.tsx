@@ -22,13 +22,19 @@ export default function Index() {
     contactRef,
   ];
 
+  const scrollToProjects = () => {
+    if (projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <body className="bg-gray-1">
       <div className="bg-gradient-to-bl from-green-1/20 via-black/20 to-green-1/20 min-h-screen p-0 m-0 text-white">
         <Navbar sectionRefs={sectionRefs} />
         <DotNavigation sectionRefs={sectionRefs} />
         <div ref={introRef}>
-          <Intro />
+          <Intro onProjectsClick={scrollToProjects} />
         </div>
         <div ref={aboutRef}>
           <About />

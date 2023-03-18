@@ -29,7 +29,7 @@ const Project = forwardRef<HTMLDivElement, ProjectProps>((props, ref) => {
       <img src={props.image} alt="" className="h-96"/>
       <div> 
           <div className="my-6">
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-row gap-5 items-center">
             <p className="text-3xl text-green-1 my-2">{props.projectName}</p>    
             <button onClick={props.onHide} className="border-2 rounded-full px-3 h-10 font-bold">↑</button>
             </div>

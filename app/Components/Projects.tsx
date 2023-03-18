@@ -44,8 +44,8 @@ export default function Projects() {
   }, [displayedProject]);
 
   return (
-    <div>
-      <p>My projects</p>
+    <div className="my-20">
+      <p className="text-3xl text-green-1 font-bold my-5">My projects</p>
       <div className="flex flex-row justify-center gap-10">
         <a
           onClick={() => {
@@ -97,13 +97,13 @@ export default function Projects() {
       </div>
       <div className="flex flex-row gap-20 m-20">
         {displayedProject === 1 && (
-          <Project onHide={hideProject} tools={toolsArray} image="image" projectName="Name" description={description1} id="project1" ref={project1Ref} key="1" />
+          <Project onHide={hideProject} tools={toolsArray} image="image" projectName="Name" description={description1} role="role 1" id="project1" ref={project1Ref} key="1" />
         )}
         {displayedProject === 2 && (
-          <Project onHide={hideProject} tools={toolsArray2} image="image" projectName="Name2" description={description2} id="project2" ref={project2Ref} key="2" />
+          <Project onHide={hideProject} tools={toolsArray2} image="image" projectName="Name2" description={description2} role="role 2" id="project2" ref={project2Ref} key="2" />
         )}
         {displayedProject === 3 && (
-          <Project onHide={hideProject} tools={toolsArray3} image="image" projectName="Name3" description={description3} id="project3" ref={project3Ref} key="3" />
+          <Project onHide={hideProject} tools={toolsArray3} image="image" projectName="Name3" description={description3} role="role 3" id="project3" ref={project3Ref} key="3" />
         )}
       </div>
     </div>
