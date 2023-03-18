@@ -14,7 +14,10 @@ interface ProjectProps {
   role?: string;
   website?: string;
   git?: string;
+  onHide: () => void;
 }
+
+
 
 const Project = forwardRef<HTMLDivElement, ProjectProps>((props, ref) => {
   const toolArray = [];
@@ -28,7 +31,7 @@ const Project = forwardRef<HTMLDivElement, ProjectProps>((props, ref) => {
           <div className="my-6">
             <div className="flex flex-row gap-5">
             <p className="text-3xl text-green-1 my-2">{props.projectName}</p>    
-            <button onClick={hideMyDiv} className="border-2 rounded-full px-3 h-10 font-bold">↑</button>
+            <button onClick={props.onHide} className="border-2 rounded-full px-3 h-10 font-bold">↑</button>
             </div>
               <p className="text-xl">{props.description}</p>
           </div>
