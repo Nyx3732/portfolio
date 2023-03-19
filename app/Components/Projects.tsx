@@ -2,6 +2,9 @@ import React, { useState,useRef,useEffect } from 'react';
 import icon2 from 'img/icon2.png';
 import { myFunction } from '~/Components/Show';
 import Project from '~/Components/Project';
+import AI from "img/AI.png";
+import KermitMockup from "img/KermitMockup.png";
+import MTOP from "img/MTOP.png"
 
 
 const toolsArray = ['Tool 1', 'Tool 2'];
@@ -57,8 +60,8 @@ export default function Projects() {
           }}
           className="group inline-block relative"
         >
-          <img src={icon2} className="border-2 h-80" />
-          <div className="hidden group-hover:block group-hover:text-green-1 text-xl bg-black/60 absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <img src={AI} className="rounded-md h-80" />
+          <div className="hidden group-hover:block group-hover:text-green-1 text-xl rounded-md bg-black/60 absolute top-0 left-0 w-full h-full flex items-center justify-center">
             Project 1
           </div>
         </a>
@@ -73,8 +76,8 @@ export default function Projects() {
           }}
           className="group inline-block relative"
         >
-          <img src={icon2} className="border-2 h-80" />
-          <div className="hidden group-hover:block group-hover:text-green-1 text-xl bg-black/60 absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <img src={MTOP} className="rounded-md h-80" />
+          <div className="hidden group-hover:block group-hover:text-green-1 text-xl rounded-md bg-black/60 absolute top-0 left-0 w-full h-full flex items-center justify-center">
             Project 2
           </div>
         </a>
@@ -89,21 +92,21 @@ export default function Projects() {
           }}
           className="group inline-block relative"
           >
-          <img src={icon2} className="border-2 h-80" />
-          <div className="hidden group-hover:block group-hover:text-green-1 text-xl bg-black/60 absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <img src={KermitMockup} className="rounded-md h-80" />
+          <div className="hidden group-hover:block group-hover:text-green-1 text-xl rounded-md bg-black/60 absolute top-0 left-0 w-full h-full flex items-center justify-center">
             Project 3
           </div>
         </a>
       </div>
       <div className="flex flex-row gap-20 m-20">
         {displayedProject === 1 && (
-          <Project onHide={hideProject} tools={toolsArray} image="image" projectName="Name" description={description1} role="role 1" id="project1" ref={project1Ref} key="1" />
+          <Project onHide={hideProject} tools={toolsArray} image={AI} projectName="Name" description={description1} role="role 1" id="project1" ref={project1Ref} key="1" />
         )}
         {displayedProject === 2 && (
-          <Project onHide={hideProject} tools={toolsArray2} image="image" projectName="Name2" description={description2} role="role 2" id="project2" ref={project2Ref} key="2" />
+          <Project onHide={hideProject} tools={toolsArray2} image={MTOP} projectName="Name2" description={description2} role="role 2" id="project2" ref={project2Ref} key="2" />
         )}
         {displayedProject === 3 && (
-          <Project onHide={hideProject} tools={toolsArray3} image="image" projectName="Name3" description={description3} role="role 3" id="project3" ref={project3Ref} key="3" />
+          <Project onHide={hideProject} tools={toolsArray3} image={KermitMockup} projectName="Name3" description={description3} role="role 3" id="project3" ref={project3Ref} key="3" />
         )}
       </div>
     </div>

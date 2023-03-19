@@ -2,6 +2,8 @@
 
 import React, { forwardRef, Ref } from 'react';
 import icon2 from "img/icon2.png";
+import AI from "img/AI.png";
+import KermitMockup from "img/KermitMockup.png";
 import Tool from "~/Components/Tool";
 import { myFunction, hideMyDiv } from "~/Components/Show";
 
@@ -27,7 +29,7 @@ const Project = forwardRef<HTMLDivElement, ProjectProps>((props, ref) => {
   return(
     <div className="flex flex-row gap-20 m-20" id={props.id} ref={ref}>
       <img src={props.image} alt="" className="h-96"/>
-      <div> 
+      <div className="border-2"> 
           <div className="my-6">
             <div className="flex flex-row gap-5 items-center">
             <p className="text-3xl text-green-1 my-2">{props.projectName}</p>    
