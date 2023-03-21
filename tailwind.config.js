@@ -16,6 +16,10 @@ module.exports = {
       height: {
         'custom' : '38rem',
       },
+      width: {
+        'custom' : '38rem',
+        '120' : '43rem',
+      },
       colors: {
         green:{
           1:"#75FCDD",

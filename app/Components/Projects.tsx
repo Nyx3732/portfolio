@@ -48,8 +48,11 @@ export default function Projects() {
 
   return (
     <div className="my-20">
-      <p className="text-3xl text-green-1 font-bold my-5">My projects</p>
-      <div className="flex flex-row justify-center gap-10">
+        <div className="flex justify-center">
+            <p className="text-3xl text-green-1 font-bold mb-12">My projects</p>
+        </div>
+      
+      <div className="flex flex-row justify-center gap-8">
         <a
           onClick={() => {
             if (displayedProject === 1) {
@@ -58,11 +61,11 @@ export default function Projects() {
               setDisplayedProject(1);
             }
           }}
-          className="group inline-block relative"
+          className="cursor-pointer group inline-block relative"
         >
-          <img src={AI} className="rounded-md h-80" />
-          <div className="hidden group-hover:block group-hover:text-green-1 text-xl rounded-md bg-black/60 absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            Project 1
+           <img src={AI} className="rounded-md h-96" />
+          <div className="hidden group-hover:flex group-hover:text-green-1 text-2xl font-bold rounded-md bg-black/60 absolute top-0 left-0 w-full h-full items-center justify-center">
+             Project 1
           </div>
         </a>
 
@@ -74,11 +77,11 @@ export default function Projects() {
               setDisplayedProject(2);
             }
           }}
-          className="group inline-block relative"
+          className="cursor-pointer group inline-block relative"
         >
-          <img src={MTOP} className="rounded-md h-80" />
-          <div className="hidden group-hover:block group-hover:text-green-1 text-xl rounded-md bg-black/60 absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            Project 2
+          <img src={MTOP} className="rounded-md h-96" />
+          <div className="hidden group-hover:flex group-hover:text-green-1 text-2xl font-bold rounded-md bg-black/60 absolute top-0 left-0 w-full h-full items-center justify-center">
+             Project 2
           </div>
         </a>
 
@@ -90,15 +93,15 @@ export default function Projects() {
               setDisplayedProject(3);
             }
           }}
-          className="group inline-block relative"
+          className="cursor-pointer group inline-block relative"
           >
-          <img src={KermitMockup} className="rounded-md h-80" />
-          <div className="hidden group-hover:block group-hover:text-green-1 text-xl rounded-md bg-black/60 absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            Project 3
+          <img src={KermitMockup} className="rounded-md h-96" />
+          <div className="hidden group-hover:flex group-hover:text-green-1 text-2xl font-bold rounded-md bg-black/60 absolute top-0 left-0 w-full h-full items-center justify-center">
+             Project 3
           </div>
         </a>
       </div>
-      <div className="flex flex-row gap-20 m-20">
+      <div className="flex flex-row gap-20 justify-center my-16">
         {displayedProject === 1 && (
           <Project onHide={hideProject} tools={toolsArray} image={AI} projectName="Name" description={description1} role="role 1" id="project1" ref={project1Ref} key="1" />
         )}

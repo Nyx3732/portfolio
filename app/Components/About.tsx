@@ -1,4 +1,5 @@
 import photo from "img/photo.png"
+import avatar from "img/avatar.png"
 import React from "react";
 import Skill from "~/Components/Skill";
 
@@ -15,12 +16,12 @@ const skillsArray = [
 
 export default function About() {
     return(
-        <div className="flex flex-row gap-20 justify-evenly items-center my-20">
-        <img src={photo} className="h-custom"></img>
+        <div className="flex flex-row gap-20  items-center my-20">
+        <img src={avatar} className="h-custom"></img>
         <div> 
-            <div className="my-10">
+            <div className="">
                 <p className="text-3xl text-green-1 font-bold my-5">About me</p>
-                <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p className="text-xl w-120">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </div>
             <div className=" my-10">
             <p className="text-xl my-5">My skills</p> 

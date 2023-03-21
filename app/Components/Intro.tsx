@@ -1,7 +1,11 @@
 import laptop from "img/laptop.png"
+import lap from "img/lap.png"
 import icon2 from "img/icon2.png"
 import icon3 from "img/ICON3.png"
 import React from "react";
+import git from "img/git.png"
+import email from "img/email.png"
+import linkedin from "img/linkedin.png"
 
 interface IntroProps {
     onProjectsClick: () => void;
@@ -17,20 +21,20 @@ export default function Intro({ onProjectsClick }: IntroProps) {
           <p className="text-3xl text-green-1 my-5">Software and website developer</p>
         </div>
         <div className="flex flex-row gap-3 items-center my-5">
-          <a href=""><img src={icon2} className="h-10"></img></a>
-          <a href=""><img src={icon3} className="h-10"></img></a>
+          <a href="https://www.linkedin.com/in/sebastian-glados/"><img src={linkedin} className="cursor-pointer h-10"></img></a>
+          <a href="https://github.com/Raikyudev"><img src={git} className="h-10 cursor-pointer"></img></a>
           <button
             onClick={onProjectsClick}
-            className="bg-gradient-to-bl from-green-2 to-green-1 w-max rounded-full p-1 focus:outline-none"
+           className="border-2 rounded-full h-10 cursor-pointer"
           >
-            <div className="flex flex-col justify-between h-full bg-gray-1 text-white rounded-full py-1 px-5 hover:bg-transparent">
-              <p className="text-xl">My projects ↓</p>
-            </div>
+            
+              <p className="text-white text-xl px-4">My projects ↓</p>
+            
           </button>
         </div>
         </div>
         <div>
-            <img src={laptop} className="h-96"></img>
+            <img src={lap} className="h-96"></img>
         </div>
         </div>
    
