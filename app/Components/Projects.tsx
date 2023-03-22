@@ -49,7 +49,7 @@ export default function Projects() {
   return (
     <div className="my-20">
         <div className="flex justify-center">
-            <p className="text-3xl text-green-1 font-bold mb-12">My projects</p>
+            <p className="text-3xl text-green-1 font-bold mb-12">Projects</p>
         </div>
       
       <div className="flex flex-row justify-center gap-8">
