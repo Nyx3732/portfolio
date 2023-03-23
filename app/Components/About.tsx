@@ -21,7 +21,7 @@ export default function About() {
         <div> 
             <div className="">
                 <p className="text-3xl text-green-1 font-bold my-5">About me</p>
-                <p className="text-xl w-120">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p className="text-xl w-120">I'm a computer science student with a passion for software and web development. I have experience creating innovative digital products. As a naturally curious individual, I'm always eager to learn and adapt to new technologies and ideas. My ultimate goal is to work with like-minded individuals to create software that has a positive impact on the world.</p>
             </div>
             <div className=" my-10">
             <p className="text-xl my-5">My skills</p> 

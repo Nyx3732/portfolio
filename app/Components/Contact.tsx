@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="flex flex-col gap-7 border-2 rounded-md p-20">
             <div className="cursor-pointer flex flex-row gap-2 items-center">
                 <img src={email} className="h-10"/>
-                <p className="text-xl">sebastian.glados.7@gmail.com</p>
+                <a className="text-xl" href="mailto:sebastian.glados.7@gmail.com">sebastian.glados.7@gmail.com</a>
             </div>
             <a href="https://www.linkedin.com/in/sebastian-glados/" className="cursor-pointer flex flex-row gap-2 items-center">
                 <img src={linkedin} className="h-10"/>

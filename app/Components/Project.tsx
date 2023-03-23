@@ -42,8 +42,8 @@ const Project = forwardRef<HTMLDivElement, ProjectProps>((props, ref) => {
           <p className="text-xl">Tools:</p>
           <div className="flex flex-row gap-2 mb-2">{toolArray}</div>
           <div className="flex flex-row gap-2">
-            <a href={props.website}><img src={git} className="h-10 cursor-pointer" /></a>
-            <a href={props.git}><img src={web} className="h-10 cursor-pointer" /></a>
+            {props.website && <a href={props.website}><img src={web} className="h-10 cursor-pointer" /></a>}
+            {props.git && <a href={props.git}><img src={git} className="h-10 cursor-pointer" /></a>}
           </div>
         </div>
       </div>
