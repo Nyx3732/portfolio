@@ -122,7 +122,7 @@ export default function Projects() {
           <Project onHide={hideProject} tools={toolsArray} image={AI} projectName="A.I Gallery" description={description1} role="Full stack development" id="project1" ref={project1Ref} git="https://github.com/Raikyudev/AIGallery" key="1" />
         )}
         {displayedProject === 2 && (
-          <Project onHide={hideProject} tools={toolsArray2} image={MTOP} projectName="MtopSwap Leaderboard Contest" description={description2} role="Backend" id="project2" ref={project2Ref} key="2" />
+          <Project onHide={hideProject} tools={toolsArray2} image={MTOP} projectName="MtopSwap Leaderboard Contest" description={description2} role="Backend" id="project2" ref={project2Ref} website="https://dune.com/alexander88/mtopswap-user-leaderboards" key="2" />
         )}
         {displayedProject === 3 && (
           <Project onHide={hideProject} tools={toolsArray3} image={KermitMockup} projectName="KermitToken" description={description3} role="Frontend" id="project3" ref={project3Ref} key="3" />
